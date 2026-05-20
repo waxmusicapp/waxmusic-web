@@ -153,6 +153,34 @@ main { flex: 1; }
 .legal a:hover { text-decoration: underline; }
 .legal strong { font-weight: 700; }
 
+/* CCPA categories table (privacy §11.3) — kept minimal to match the rest
+   of the legal copy without introducing a new visual language. */
+.legal .table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 16px 0 20px;
+  -webkit-overflow-scrolling: touch;
+}
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+.legal th,
+.legal td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.55;
+}
+.legal th {
+  background: var(--bg);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text);
+}
+
 /* ── Footer ─────────────────────────────────────────────────────────── */
 .site-footer {
   border-top: 1px solid var(--border);
